@@ -3,6 +3,7 @@ package mainApp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.IProductoDAO;
 import mainApp.dto.Producto;
@@ -13,6 +14,7 @@ import mainApp.dto.Producto;
  *
  */
 
+@Service
 public class ProductoServiceImpl implements IProductoService {
 
 	@Autowired

@@ -19,7 +19,7 @@ public interface IMaquinaService {
 
 	public Maquina guardarMaquina(Maquina maquina); // Guarda una maquina.
 
-	public Maquina actualizaMaquina(Maquina maquina); // Actualiza una maquina.
+	public Maquina actualizarMaquina(Maquina maquina); // Actualiza una maquina.
 
 	public void eliminarMaquina(int id); // Elimina la maquina correspondiente a la ID.
 

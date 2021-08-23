@@ -1,7 +1,10 @@
 package mainApp.service;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import mainApp.dao.IMaquinaDAO;
 import mainApp.dto.Maquina;
 
@@ -11,6 +14,7 @@ import mainApp.dto.Maquina;
  *
  */
 
+@Service	
 public class MaquinaServiceImpl implements IMaquinaService {
 
 	@Autowired
@@ -32,7 +36,7 @@ public class MaquinaServiceImpl implements IMaquinaService {
 	}
 
 	@Override
-	public Maquina actualizaMaquina(Maquina maquina) {
+	public Maquina actualizarMaquina(Maquina maquina) {
 		return iMaquinaDAO.save(maquina);
 	}
 

@@ -37,10 +37,10 @@ public class CajeroController {
 	// List por id
 	@GetMapping("/cajeros/{id}")
 	public Cajero cajeroID(@PathVariable(name = "id") int id) {
-		Cajero Cajero_id = new Cajero();
-		Cajero_id = cajeroServiceImpl.cajeroID(id);
-		System.out.println("Curso x ID: " + Cajero_id);
-		return Cajero_id;
+		Cajero cajeroId = new Cajero();
+		cajeroId = cajeroServiceImpl.cajeroID(id);
+		System.out.println("Cajero x ID: " + cajeroId);
+		return cajeroId;
 	}
 
 	// Crear cajero

@@ -3,6 +3,7 @@ package mainApp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.IVentaDAO;
 import mainApp.dto.Venta;
@@ -13,6 +14,7 @@ import mainApp.dto.Venta;
  *
  */
 
+@Service
 public class VentaServiceImpl implements IventaService {
 
 	@Autowired
