@@ -18,7 +18,7 @@ public interface ICajeroService {
 
 	public Cajero guardarCajero(Cajero cajero); // Guarda un cajero.
 
-	public Cajero actualizaCajero(Cajero cajero); // Actualiza un cajero.
+	public Cajero actualizarCajero(Cajero cajero); // Actualiza un cajero.
 
 	public void eliminarCajero(int id); // Elimina el cajero correspondiente a la ID.
 

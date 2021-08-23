@@ -3,6 +3,7 @@ package mainApp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.ICajeroDAO;
 import mainApp.dto.Cajero;
@@ -13,34 +14,35 @@ import mainApp.dto.Cajero;
  *
  */
 
+@Service
 public class CajeroServiceImpl implements ICajeroService {
 
 	@Autowired
-	ICajeroDAO iCajeroDao;
+	ICajeroDAO iCajeroDAO;
 
 	@Override
 	public List<Cajero> listarCajeros() {
-		return iCajeroDao.findAll();
+		return iCajeroDAO.findAll();
 	}
 
 	@Override
 	public Cajero cajeroID(int id) {
-		return iCajeroDao.findById(id).get();
+		return iCajeroDAO.findById(id).get();
 	}
 
 	@Override
 	public Cajero guardarCajero(Cajero cajero) {
-		return iCajeroDao.save(cajero);
+		return iCajeroDAO.save(cajero);
 	}
 
 	@Override
-	public Cajero actualizaCajero(Cajero cajero) {
-		return iCajeroDao.save(cajero);
+	public Cajero actualizarCajero(Cajero cajero) {
+		return iCajeroDAO.save(cajero);
 	}
 
 	@Override
 	public void eliminarCajero(int id) {
-		iCajeroDao.deleteById(id);
+		iCajeroDAO.deleteById(id);
 	}
 
 }

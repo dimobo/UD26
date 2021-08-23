@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS `cajeros`;
 
  CREATE TABLE `cajeros`(
 	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
-	nomapels VARCHAR (255)
+	nom_apels VARCHAR (255)
 );
 
 CREATE TABLE `productos`(
@@ -32,16 +32,16 @@ CREATE TABLE `ventas`(
 );
 
 /* Inserts tabla cajeros */
-INSERT INTO cajeros (nomapels) VALUES ("Dídac Montero");
-INSERT INTO cajeros (nomapels) VALUES ("Alejandro Algo");
-INSERT INTO cajeros (nomapels) VALUES ("Jordi Fores");
-INSERT INTO cajeros (nomapels) VALUES ("Pepe Pringao");
-INSERT INTO cajeros (nomapels) VALUES ("Xavi Falco");
-INSERT INTO cajeros (nomapels) VALUES ("Rocio Lendines");
-INSERT INTO cajeros (nomapels) VALUES ("Jair Fava");
-INSERT INTO cajeros (nomapels) VALUES ("Lluis Pino");
-INSERT INTO cajeros (nomapels) VALUES ("Victor Zaragoza");
-INSERT INTO cajeros (nomapels) VALUES ("Roger Melic");
+INSERT INTO cajeros (nom_apels) VALUES ("Dídac Montero");
+INSERT INTO cajeros (nom_apels) VALUES ("Alejandro Algo");
+INSERT INTO cajeros (nom_apels) VALUES ("Jordi Fores");
+INSERT INTO cajeros (nom_apels) VALUES ("Pepe Pringao");
+INSERT INTO cajeros (nom_apels) VALUES ("Xavi Falco");
+INSERT INTO cajeros (nom_apels) VALUES ("Rocio Lendines");
+INSERT INTO cajeros (nom_apels) VALUES ("Jair Fava");
+INSERT INTO cajeros (nom_apels) VALUES ("Lluis Pino");
+INSERT INTO cajeros (nom_apels) VALUES ("Victor Zaragoza");
+INSERT INTO cajeros (nom_apels) VALUES ("Roger Melic");
 
 /* Inserts tabla productos */
 INSERT INTO productos (nombre, precio) VALUES ("Tornillo",1.5);
