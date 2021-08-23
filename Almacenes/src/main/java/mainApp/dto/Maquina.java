@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "maquinas_registradoras")
-public class MaquinaRegistradora {
+public class Maquina {
 
 	// Atributos de la maquina.
 	
@@ -37,7 +37,7 @@ public class MaquinaRegistradora {
 
 	// Constructores
 	
-	public MaquinaRegistradora() {
+	public Maquina() {
 	}
 
 	/**
@@ -46,7 +46,7 @@ public class MaquinaRegistradora {
 	 * @param piso
 	 * @param venta
 	 */
-	public MaquinaRegistradora(int id, int piso, List<Venta> venta) {
+	public Maquina(int id, int piso, List<Venta> venta) {
 		super();
 		this.id = id;
 		this.piso = piso;

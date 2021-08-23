@@ -29,7 +29,7 @@ public class Venta {
 	public Venta() {
 	}
 
-	public Venta(Cajero cajero, MaquinaRegistradora maquina, Producto producto) {
+	public Venta(Cajero cajero, Maquina maquina, Producto producto) {
 		super();
 		this.id.cajero = cajero;
 		this.id.maquina = maquina;
@@ -57,7 +57,7 @@ public class Venta {
 	 * 
 	 * @return the maquina
 	 */
-	public MaquinaRegistradora getMaquina() {
+	public Maquina getMaquina() {
 		return id.maquina;
 	}
 
@@ -65,7 +65,7 @@ public class Venta {
 	 * 
 	 * @param maquina the maquina to set
 	 */
-	public void setMaquina(MaquinaRegistradora maquina) {
+	public void setMaquina(Maquina maquina) {
 		this.id.maquina = maquina;
 	}
 
@@ -105,7 +105,7 @@ class VentaId implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name = "maquina")
-	MaquinaRegistradora maquina;
+	Maquina maquina;
 
 	@ManyToOne
 	@JoinColumn(name = "producto")
