@@ -13,6 +13,12 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+/**
+ * 
+ * @author dimobo
+ *
+ */
+
 @Entity
 @Table(name = "maquinas_registradoras")
 public class MaquinaRegistradora {
