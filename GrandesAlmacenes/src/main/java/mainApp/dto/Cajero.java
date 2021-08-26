@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "cajeros")
 public class Cajero {
 
-	// Atributos del cajero.
+	// Atributos de la clase.
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // busca ultimo valor e incrementa desde id final de db

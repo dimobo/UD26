@@ -8,8 +8,8 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.almacenes</groupId>
-	<artifactId>Almacenes</artifactId>
+	<groupId>com.grandesalmacenes</groupId>
+	<artifactId>GrandesAlmacenes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>Almacenes</name>
