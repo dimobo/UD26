@@ -11,5 +11,6 @@ import mainApp.dto.Venta;
  */
 
 public interface IVentaDAO extends JpaRepository<Venta, Integer> {
-
+	
+	
 }

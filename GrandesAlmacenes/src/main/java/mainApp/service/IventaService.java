@@ -21,6 +21,6 @@ public interface IventaService {
 
 	public Venta actualizaVenta(Venta venta); // Actualiza una venta.
 
-	public void eliminarVenta(int id); // Elimina la venta correspondiente a la ID.
+	public void eliminarVenta(Venta venta); // Elimina la venta correspondiente a la ID.
 
 }

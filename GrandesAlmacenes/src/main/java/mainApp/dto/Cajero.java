@@ -2,6 +2,7 @@ package mainApp.dto;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -29,11 +30,12 @@ public class Cajero {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // busca ultimo valor e incrementa desde id final de db
 	private int id;
+	
 	@Column
 	private String nomApels;
 
-	@OneToMany
-	@JoinColumn(name = "id")
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "cajero")
 	private List<Venta> venta;
 
 	// Constructores.

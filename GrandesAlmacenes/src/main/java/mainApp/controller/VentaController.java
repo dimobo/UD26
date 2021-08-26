@@ -64,9 +64,9 @@ public class VentaController {
 	}
 
 	// Delete
-	@DeleteMapping("/ventas/{id}")
-	public void eliminarVenta(@PathVariable(name = "id") int id) {
-		ventaServiceImpl.eliminarVenta(id);
+	@DeleteMapping("/ventas")
+	public void eliminarVenta(@RequestBody Venta venta) {
+		ventaServiceImpl.eliminarVenta(venta);
 	}
 
 }

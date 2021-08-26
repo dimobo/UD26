@@ -100,14 +100,14 @@ class VentaId implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@ManyToOne
-	@JoinColumn(name = "cajero")
+	@JoinColumn(name = "cajero", insertable = true, updatable = true, nullable = true)
 	Cajero cajero;
 
 	@ManyToOne
-	@JoinColumn(name = "maquina")
+	@JoinColumn(name = "maquina", insertable = true, updatable = true, nullable = true)
 	Maquina maquina;
 
 	@ManyToOne
-	@JoinColumn(name = "producto")
+	@JoinColumn(name = "producto", insertable = true, updatable = true, nullable = true)
 	Producto producto;
 }
